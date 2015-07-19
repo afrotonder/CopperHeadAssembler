@@ -155,6 +155,15 @@ def wrap(seq):
 
 wrap(assembly)
 
+# Need to import NetworkX package
+# and build the graph DG using networkx functions
+import networkx as nx
+DG=nx.DiGraph()
+
+# add the edges here
+# see http://ccom.uprrp.edu/~humberto/kmer-graph-with-errors.html
+# the two programs are different, and use different tools.
+ 
 nx.write_dot(DG, "full-graph.dot") #Shows graph path with the Gephi program
 
 
